@@ -14,9 +14,7 @@ public class DiameterOfBinaryTre {
             if(root.left != null) mid++;
             if(root.right != null) mid++;
 
-            int max = Math.max(leftAns , Math.max(rightAns , mid));
-
-            return mid;
+        return Math.max(leftAns , Math.max(rightAns , mid));
     }
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
